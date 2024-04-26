@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pdf Converter</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>IMAGE TO PDF CONVERTER</h1>
+        <div class="container1">
+            <div class="box">
+                <div class="left-box">
+                    <p>Uploaded Image</p>
+                    <div id="image-div"></div>
+                </div>
+                <div class="right-box">
+                    <form>
+                        <label for="file">Upload Image</label>
+                        <input type="file" class="form-control" id="file" name="file"
+                            accept=" .jpg, .jpeg, .png, .gif , image*/ " hidden />
+                        <img class="image" src="folder.png">
+                        <h3>Select file....</h3>
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="select">
+            </div>
+
+            <!-- <select class="">
+                <option value="JPG">JPG</option>
+                <option value="PNG">PNG</option>
+                <option value="GIF">GIF</option>
+                <option value="JPEG">JPEG</option>
+            </select>  -->
+            <div>
+                <button class="btn" id="btndownload">Download Pdf</button>
+                <button class="btn1" id="btnclear">Clear Image</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="script.js"> </script>
+
+</body>
+
+</html>
